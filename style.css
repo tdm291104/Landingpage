@@ -672,6 +672,41 @@ a{
     padding-top: 248px;
 }
 
+.card{
+    background-color: rgb(250,250,252);
+    border-radius: 28px;
+}
+.content-container{
+    display: flex;
+}
+.content-container ul{
+    width: 350px;
+    padding: 67px;
+    margin-top: 0;
+}
+
+.content-container h4 span{
+    font-size: 24px;
+}
+.content-container button{
+    background-color: rgb(250,250,252);
+    border: rgb(250,250,252);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.content-container p{
+    width: 310px;
+}
+.card-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.content-container img{
+    transform: scale(0.8,0.8);
+}
+
 @media only screen and (min-width: 750px){
     .header1-1{
         display: flex;
