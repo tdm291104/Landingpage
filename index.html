@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="ln ln1">
@@ -102,8 +105,21 @@
                 </div>
                 
             </div>
-            <div class="vdsection1">
-            <video id="vdsection1" autoplay muted><source src="https://www.apple.com/105/media/us/macbook-pro/2023/232a2dbf-5898-4fd1-a350-6a7c5c2e31c9/anim/highlights-chips/large_2x.mp4"></video>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <video id="vdsection1" autoplay muted><source src="https://www.apple.com/105/media/us/macbook-pro/2023/232a2dbf-5898-4fd1-a350-6a7c5c2e31c9/anim/highlights-chips/large_2x.mp4"></video>
+                </div>
+                <div class="mySlides fade">
+                    <video id="vdsection1" autoplay muted><source src="https://www.apple.com/105/media/us/macbook-pro/2023/232a2dbf-5898-4fd1-a350-6a7c5c2e31c9/anim/highlights-display/large_2x.mp4"></video>
+                </div>
+                <div class="mySlides fade">
+                    <video id="vdsection1" autoplay muted><source src="https://www.apple.com/105/media/us/macbook-pro/2023/232a2dbf-5898-4fd1-a350-6a7c5c2e31c9/anim/highlights-connectivity/large_2x.mp4"></video>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
         </div>
     </div>
@@ -115,8 +131,8 @@
                 </div>
            </div>
         </div>
-            <div class="vdsection1">
-            <img src="https://www.apple.com/v/macbook-pro/aj/images/overview/closer-look/3d_viewer_pf_16__b8iq7yl5sewi_large.jpg" alt="">
+            <div class="vdsection2">
+                <img src="https://www.apple.com/v/macbook-pro/aj/images/overview/closer-look/3d_viewer_pf_16__b8iq7yl5sewi_large.jpg" alt="">
             </div>
         </div>
     <div class="section section3">
@@ -586,7 +602,7 @@
                             <li>
                                 <h4>
                                     <button>
-                                        <span>Mac and iPhone</span>
+                                        <span>Mac and iPad</span>
                                         <span><i class="fa-solid fa-angle-up"></i></span>
                                     </button>
                                 </h4>
@@ -597,7 +613,7 @@
                             <li>
                                 <h4>
                                     <button>
-                                        <span>Mac and iPhone</span>
+                                        <span>Mac and Apple Watch</span>
                                         <span><i class="fa-solid fa-angle-up"></i></span>
                                     </button>
                                 </h4>
@@ -640,8 +656,97 @@
                     </ul>
                 </div>
             </div>
-            
+        </div>
+        <div class="content">
+            <ul class="product-tile-set">
+                <li>
+                    <div class="product-tile-header">
+                        <img src="https://www.apple.com/v/macbook-pro/aj/images/overview/contrast/product_tile_mbp_14_16__br3iijc0eys2_large.png" alt="">
+                    </div>
+                    <div class="product-tile-swatches">
+                        <div class="product-tile-swatch-item finish-space-black"></div>
+                        <div class="product-tile-swatch-item finish-silver"></div>
+                        <div class="product-tile-swatch-item finish-space-gray"></div>
+                    </div>
+                    <div class="product-tile-padding" style="font-weight: 600;">
+                        <h3>MacBook Pro 14” and 16”</h3>
+                        <p>M3, M3 Pro, or M3 Max chip</p>
+                    </div>
+                    <p class="product-tile-positioning">The most advanced Mac laptops for demanding workflows.</p>
+                    <p class="product-tile-positioning" style="font-weight: 600;">From $1599 or <br> $133.25/mo. for 12 mo.*</p>
+                    <div class="product-tile-ctas">
+                        <a href="" class="ctas-left">Learn more</a>
+                        <a href="" class="ctas-right">Buy ></a>
+                    </div>
+                    <div class="product-tile-plus">
+                        <div class="product-tile-plus-cell" >
+                            <img src="https://www.apple.com/v/macbook-pro/aj/images/overview/contrast/product_tile_icon_m3_pro_max__bwd1qyauqxv6_large.png" alt="">
+                            <span>Apple M3, M3 Pro, or M3 Max chip</span>
+                        </div>
+                        <div class="product-tile-plus-cell">
+                            <span>Up to</span>
+                            <strong>22 hrs</strong>
+                            <span>battery life1</span>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-tile-header">
+                        <img src="https://www.apple.com/v/macbook-pro/aj/images/overview/contrast/product_tile_mbp_14_16__br3iijc0eys2_large.png" alt="">
+                    </div>
+                    <div class="product-tile-swatches">
+                        <div class="product-tile-swatch-item finish-space-black"></div>
+                        <div class="product-tile-swatch-item finish-starlight"></div>
+                        <div class="product-tile-swatch-item finish-space-gray"></div>
+                        <div class="product-tile-swatch-item finish-silver"></div>
+                    </div>
+                    <div class="product-tile-padding" style="font-weight: 600;">
+                        <h3>MacBook Air 13” and 15”</h3>
+                        <p>M2 chip</p>
+                    </div>
+                    <p class="product-tile-positioning">Strikingly thin and fast so you can work, play, or create anywhere.</p>
+                    <p class="product-tile-positioning" style="font-weight: 600;">From $1099 or $91.58/mo. <br> for 12 mo.*</p>
+                    <div class="product-tile-ctas">
+                        <a href="" class="ctas-left">Learn more</a>
+                        <a href="" class="ctas-right">Buy ></a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+
 </body>
 </html>
