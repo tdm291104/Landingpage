@@ -347,8 +347,7 @@ a{
 .img2{
     position: absolute;
     top: 115px;
-    /* left: 419px; */
-    left: 219px;
+    left: 20%;
     animation-name: img2;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -362,8 +361,7 @@ a{
 .img3{
     position: absolute;
     top: 231px;
-    /* left: 804px; */
-    left: 604px;
+    left: 50%;
     animation-name: img3;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -377,8 +375,7 @@ a{
 .img4{
     position: absolute;
     top: 116px;
-    /* left: 952px; */
-    left: 752px;
+    left: 55%;
     animation-name: img4;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -392,8 +389,7 @@ a{
 .img5{
     position: absolute;
     top: 411px;
-    /* left: 180px; */
-    left: -20px;
+    left: 5%;
     animation-name: img5;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -407,8 +403,7 @@ a{
 .img6{
     position: absolute;
     top: 409px;
-    /* left: 1091px; */
-    left: 891px;
+    left: 56%;
     animation-name: img6;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -422,8 +417,7 @@ a{
 .img7{
     position: absolute;
     top: 313px;
-    /* left: 438px; */
-    left: 238px;
+    left: 20%;
     animation-name: img7;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -437,8 +431,7 @@ a{
 .img8{
     position: absolute;
     top: 425px;
-    /* left: 901px; */
-    left: 701px;
+    left: 52%;
     animation-name: img8;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -814,16 +807,120 @@ li .product-tile-ctas .ctas-right{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     font-size: 12px;
     border-top: #d2d2d7 1px solid;
 }
 .product-tile-plus-cell{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
 }
 .product-tile-plus .product-tile-plus-cell img{
     width: 122px;
     height: 56px;
+}
+.product-tile-plus-cell strong{
+    font-size: 28px;
+}
+
+.section5{
+    margin-top: 200px;
+    background-color: #fafafa;
+    padding: 100px 0px;
+}
+.section5 .content{
+    flex-direction: column;
+}
+.section5 .content h2{
+    margin-bottom: 70px;
+    font-size: 48px;
+}
+.index-list{
+    padding: 0px;
+}
+.index-groups{
+    display: flex;
+    flex-wrap: wrap;
+}
+.index-group{
+    padding-right: 60px;
+}
+.index-item{
+    margin-bottom: 11px;
+}
+.index-header{
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    color: #6e6e73;
+}
+.index-item-elevated a{
+    font-size: 28px;
+    line-height: 1.1428571429;
+    font-weight: 600;
+}
+.index-item-base a{
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 1.4285914286;
+    font-weight: 500;
+}
+.section6{
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.section6 .content{
+    flex-direction: column;
+    border-bottom: #6e6e73 1px solid;
+}
+.section6 p{
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+}
+
+.section7{
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.section7 .content{
+    justify-content: flex-start;
+}
+.section7 .content1{
+    border-bottom: #6e6e73 1px solid;
+}
+.section7 ul{
+    display: flex;
+    padding: 0px;
+}
+.ac-gf-breadcrumbs-path li{
+    padding-right: 10px;
+}
+.ac-gf-directory{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ac-gf-directory-column-section h3{
+    margin: 0px 20px 10px 0px;
+}
+.ac-gf-directory-column-section ul{
+    display: flex;
+    flex-direction: column;
+}
+.ac-gf-directory-column{
+    padding-right: 20px;
+}
+.ac-gf-directory-column h3{
+    font-size: 12px;
+}
+.content1 p{
+    font-size: 12px;
+}
+.content1 a{
+    color: #0066CC;
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 750px){
