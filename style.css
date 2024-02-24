@@ -282,7 +282,7 @@ a{
     padding-bottom: 0px;
 }
 .subsection1 .subsection1-mini1 h4{
-    margin-left: 82px;
+    margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 80px;
@@ -298,9 +298,9 @@ a{
     color: #86868b;
     max-width: 66.6666666667%;
 }
-.scroll-container{
+/* .scroll-container{
     margin-left: 82px;
-}
+} */
 .item-container{
     display: flex;
     justify-content: space-between;
@@ -454,6 +454,8 @@ a{
 }
 .ND{
     width: 327px;
+    margin-right: 20px;
+    min-width: 330px;
 }
 .ND-bottom{
     margin-top: 45px;
@@ -535,6 +537,7 @@ a{
 }
 .reviewmini .item-container .miniheader{
     font-size: 28px;
+    min-width: 230px;
 }
 .reviewmini .item-container .minisub{
     font-size: 17px;
@@ -584,7 +587,7 @@ a{
     font-size: 80px;
     max-width: 50%;
     font-weight: 600;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 .subsection2 #vd1{
     width: 1614px;
@@ -952,32 +955,75 @@ li .product-tile-ctas .ctas-right{
     }
 }
 @media only screen and (min-width: 1025px){
-    
+    .class1{
+        display: flex;
+    }
+    .class3{
+        display: none;
+    }
 }
 @media only screen and (max-width: 1025px) AND (min-width: 575px) {
     img{
-        transform: scale(0.8,0.8);
+        transform: scale(0.9,0.9);
     }
     video{
-        transform: scale(0.8,0.8);
+        transform: scale(0.9,0.9);
     }
     h1{
-        transform: scale(0.8,0.8);
+        transform: scale(0.9,0.9);
     }
     h2{
-        transform: scale(0.8,0.8);
+        transform: scale(0.9,0.9);
     }
     h3{
-        transform: scale(0.8,0.8);
+        transform: scale(0.9,0.9);
     }
     h4{
-        transform: scale(0.8,0.8);
+        transform: scale(0.9,0.9);
     }
     .content{
         justify-content: flex-start;
         padding-left: 0px;
     }
+    .list-item{
+        transform: scale(0.95,0.95);
+    }
+    .section5 h3{
+        transform: scale(1,1);
+    }
+    .section7 h3{
+        transform: scale(1,1);
+    }
+    .class1{
+        display: flex;
+    }
+    .class3{
+        display: none;
+    }
 }
 @media only screen and (max-width: 575px) AND (min-width: 0px) {
-
+    .class1{
+        display: none;
+    }
+    .class3{
+        display: flex;
+    }
+    img{
+        transform: scale(0.7,0.7);
+    }
+    video{
+        transform: scale(0.7,0.7);
+    }
+    h1{
+        transform: scale(0.7,0.7);
+    }
+    h2{
+        transform: scale(0.7,0.7);
+    }
+    h3{
+        transform: scale(0.7,0.7);
+    }
+    h4{
+        transform: scale(0.7,0.7);
+    }
 }
