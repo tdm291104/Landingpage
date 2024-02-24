@@ -231,10 +231,10 @@ a{
 }
 .sectionheader{
     width: 100%;
-    height: 60px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
+    flex-wrap: wrap;
 }
 .sectionheaderright{
     display: flex;
@@ -248,6 +248,8 @@ a{
     justify-content: flex-end;
     grid-gap: 28px;
     gap: 28px;
+    padding-bottom: 40px;
+    
 }
 .sectionheaderleft h2{
     font-size: 56px;
@@ -313,6 +315,9 @@ a{
     line-height: 1.1428571429;
     font-weight: 600;
     letter-spacing: .007em;
+}
+.list-item{
+    padding-right: 10px;
 }
 .scroll-container .list-item .color1{
     color: #43B9B9;
@@ -451,11 +456,13 @@ a{
     font-size: 21px;
     display: flex;
     justify-content: space-around;
+
 }
 .ND{
     width: 327px;
     margin-right: 20px;
     min-width: 330px;
+    margin-bottom: 50px;
 }
 .ND-bottom{
     margin-top: 45px;
@@ -656,7 +663,6 @@ a{
 }
 #imgtop{
     margin-top: 50px;
-    transform: translateX(28%);
     animation-name: imgtop;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -664,12 +670,11 @@ a{
     animation-iteration-count: infinite; 
 }
 @keyframes imgtop{
-    from{transform: translateX(55%);}
-    to{transform: translateX(28%);}
+    from{transform: translateX(80%);}
+    to{transform: translateX(40%);}
 }
 #imgbottom{
     margin-top: 60px;
-    transform: translateX(-28%);
     animation-name: imgbottom;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -677,8 +682,8 @@ a{
     animation-iteration-count: infinite; 
 }
 @keyframes imgbottom{
-    from{transform: translateX(-55%);}
-    to{transform: translateX(-28%);}
+    from{transform: translateX(-90%);}
+    to{transform: translateX(-50%);}
 }
 .cmt{
     display: flex;
@@ -963,27 +968,13 @@ li .product-tile-ctas .ctas-right{
     }
 }
 @media only screen and (max-width: 1025px) AND (min-width: 575px) {
-    img{
-        transform: scale(0.9,0.9);
-    }
-    video{
-        transform: scale(0.9,0.9);
-    }
-    h1{
-        transform: scale(0.9,0.9);
-    }
-    h2{
-        transform: scale(0.9,0.9);
-    }
-    h3{
-        transform: scale(0.9,0.9);
-    }
-    h4{
-        transform: scale(0.9,0.9);
-    }
     .content{
         justify-content: flex-start;
         padding-left: 0px;
+        margin: 10px;
+    }
+    .contentproduct{
+        justify-content: center;
     }
     .list-item{
         transform: scale(0.95,0.95);
@@ -1000,30 +991,35 @@ li .product-tile-ctas .ctas-right{
     .class3{
         display: none;
     }
+    .sectionheaderleft{
+        max-width: 70%;
+    }
 }
 @media only screen and (max-width: 575px) AND (min-width: 0px) {
+    .section{
+        padding: 50px 0px 100px;
+    }
     .class1{
         display: none;
     }
     .class3{
         display: flex;
     }
-    img{
-        transform: scale(0.7,0.7);
+    .content{
+        justify-content: flex-start;
+        padding-left: 0px;
+        margin: 10px;
     }
-    video{
-        transform: scale(0.7,0.7);
+    .sectionheaderright ul{
+        flex-direction: column;
+        margin-top: 10px;
     }
-    h1{
-        transform: scale(0.7,0.7);
+    .GPU-content-ND{
+        flex-direction: column;
     }
-    h2{
-        transform: scale(0.7,0.7);
-    }
-    h3{
-        transform: scale(0.7,0.7);
-    }
-    h4{
-        transform: scale(0.7,0.7);
+    .reviewcrip{
+        flex-direction: column;
+        align-items: center;
+        left: 0;
     }
 }
