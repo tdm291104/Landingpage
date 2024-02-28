@@ -50,6 +50,9 @@ ul{
     text-align: center;
     font-size: 12px;
 }
+.ln .ln-menu li:hover a{
+    color: #0066CC;
+}
 /* ln */
 
 /* Header */
